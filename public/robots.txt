@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Lägg till en absolut Sitemap-URL när domänen är satt, t.ex.:
+# Sitemap: https://jagrullar.se/sitemap.xml

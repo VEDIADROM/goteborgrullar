@@ -1,0 +1,38 @@
+[
+  {
+    "platform": "linkedin",
+    "author": "Anna Lindqvist",
+    "role": "Produktion / Torslanda",
+    "text": "Jag rullar för Volvo genom att se till att linan inte stannar när vi växlar in nya konfigurationer.",
+    "image": "/images/example-factory.jpg",
+    "avatar": "/images/avatar-anna.jpg",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "platform": "instagram",
+    "author": "Mikael Berg",
+    "role": "Mjukvara / diagnostik",
+    "text": "Jag rullar för Volvo genom att felsöka styrenheter klockan 23 en lördag. Det funkar imorgon bitti.",
+    "image": "/images/example-diagnostics.jpg",
+    "avatar": "/images/avatar-mikael.jpg",
+    "url": "https://www.instagram.com/"
+  },
+  {
+    "platform": "linkedin",
+    "author": "Sara Holm",
+    "role": "Leverantör / logistik",
+    "text": "Jag rullar för Volvo genom att få rätt pall till rätt port innan morgonskiftet börjar.",
+    "image": "/images/example-logistics.jpg",
+    "avatar": "/images/avatar-sara.jpg",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "platform": "instagram",
+    "author": "Jonas Petersson",
+    "role": "Student / Chalmers",
+    "text": "Jag rullar för Volvo genom att skriva mitt exjobb om batterilivslängd och verklig användning.",
+    "image": "/images/example-student.jpg",
+    "avatar": "/images/avatar-jonas.jpg",
+    "url": "https://www.instagram.com/"
+  }
+]

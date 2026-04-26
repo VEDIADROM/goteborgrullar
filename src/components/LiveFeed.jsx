@@ -1,5 +1,6 @@
 import { content } from '../content'
 import curatedPosts from '../../data/posts.json'
+import { assetUrl } from '../assetUrl'
 import PlatformIcon from './PlatformIcon'
 
 const platformLabels = {
@@ -41,7 +42,7 @@ export default function LiveFeed() {
                 >
                   <div className="aspect-[4/3] overflow-hidden bg-line">
                     <img
-                      src={post.image || '/images/feed-placeholder.jpg'}
+                      src={assetUrl(post.image || '/images/feed-placeholder.jpg')}
                       alt={post.role ? `Bild från ${post.role}` : 'Kuraterad inläggsbild'}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
                     />
@@ -56,7 +57,7 @@ export default function LiveFeed() {
                     </p>
                     <div className="mt-5 flex items-center gap-3">
                       <img
-                        src={post.avatar || '/images/avatar-placeholder.jpg'}
+                        src={assetUrl(post.avatar || '/images/avatar-placeholder.jpg')}
                         alt={post.author ? `Profilbild för ${post.author}` : 'Profilbild'}
                         className="h-11 w-11 rounded-full border border-line object-cover"
                       />

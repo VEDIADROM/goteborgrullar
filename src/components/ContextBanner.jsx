@@ -1,4 +1,5 @@
 import { content } from '../content'
+import { assetUrl } from '../assetUrl'
 
 export default function ContextBanner() {
   const { contextBanner } = content
@@ -6,7 +7,7 @@ export default function ContextBanner() {
   return (
     <section
       className="relative overflow-hidden bg-ink px-6 py-8 text-cream sm:py-10"
-      style={{ backgroundImage: "url('/images/context-background.jpg')" }}
+      style={{ backgroundImage: `url('${assetUrl('/images/context-background.jpg')}')` }}
     >
       <div className="absolute inset-0 bg-ink/86" aria-hidden="true" />
       <div

@@ -1,4 +1,5 @@
 import { content } from '../content'
+import { assetUrl } from '../assetUrl'
 
 export default function FinalCTA() {
   const { finalCta } = content
@@ -6,7 +7,7 @@ export default function FinalCTA() {
     <section
       className="relative overflow-hidden px-6 py-24 text-cream sm:py-32"
       style={{
-        backgroundImage: "url('/images/final-cta-background.jpg')",
+        backgroundImage: `url('${assetUrl('/images/final-cta-background.jpg')}')`,
         backgroundPosition: 'center 78%',
         backgroundSize: 'cover',
       }}

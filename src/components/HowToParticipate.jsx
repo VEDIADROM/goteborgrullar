@@ -1,4 +1,5 @@
 import { content } from '../content'
+import { assetUrl } from '../assetUrl'
 import ShareActions from './ShareActions'
 
 export default function HowToParticipate() {
@@ -33,7 +34,7 @@ export default function HowToParticipate() {
                     {how.photoExamples.map((example) => (
                       <figure key={example.title}>
                         <img
-                          src={example.image}
+                          src={assetUrl(example.image)}
                           alt={`Bildidé: ${example.title}`}
                           className="aspect-square w-full rounded-md object-cover"
                         />

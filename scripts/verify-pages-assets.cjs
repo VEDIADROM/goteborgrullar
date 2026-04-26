@@ -45,7 +45,7 @@ for (const file of componentFiles) {
 const html = exists('dist/index.html') ? read('dist/index.html') : ''
 check('dist index exists', Boolean(html))
 check('dist script path is relative', html.includes('type="module" crossorigin src="./assets/'))
-check('dist favicon path is relative', html.includes('href="./favicon.svg"'))
+check('dist favicon path is relative and cache-busted', html.includes('href="./favicon.svg?v=2"'))
 check('dist OG image path is relative', html.includes('content="./images/og-image.jpg"'))
 check('dist has no root-relative asset attributes', !/(src|href|content)="\/(assets|images|favicon)/.test(html))
 

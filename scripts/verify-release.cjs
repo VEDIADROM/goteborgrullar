@@ -24,6 +24,7 @@ check('package name is synced', pkg.name === 'goteborgrullar')
 check('package-lock name is synced', lock.name === 'goteborgrullar')
 check('site title uses #Göteborgrullar', html.includes('#Göteborgrullar – En stad som rullar tillsammans'))
 check('Open Graph title uses #Göteborgrullar', html.includes('og:title') && html.includes('#Göteborgrullar – En stad som rullar tillsammans'))
+check('Open Graph image is configured', html.includes('og:image') && html.includes('/images/og-image.jpg'))
 check('Twitter title uses #Göteborgrullar', html.includes('twitter:title') && html.includes('content="#Göteborgrullar"'))
 check('content site name uses #Göteborgrullar', content.includes("siteName: '#Göteborgrullar'"))
 check('banner explains initiative early', content.includes("'#Göteborgrullar är ett oberoende, organiskt initiativ från Göteborg."))
@@ -48,7 +49,7 @@ const requiredAssets = [
   'public/images/participation-coding.jpg',
   'public/images/context-background.jpg',
   'public/images/final-cta-background.jpg',
-  'public/images/og-placeholder.jpg',
+  'public/images/og-image.jpg',
 ]
 
 for (const asset of requiredAssets) {

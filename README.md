@@ -123,13 +123,13 @@ Tips:
 - Undvik stockkänsla, logotyper och officiella varumärkeselement.
 - Komprimera gärna bilder till cirka 1200 px breda JPG eller WebP.
 
-Open Graph-bilden ligger som placeholder här:
+Open Graph-bilden för delning ligger här:
 
 ```text
-public/images/og-placeholder.jpg
+public/images/og-image.jpg
 ```
 
-Byt ut den mot en egen 1200 x 630-bild inför publicering.
+Den är 1200 x 630 px och används av LinkedIn, Slack, Facebook och andra delningsytor.
 
 Toppbannerns bakgrundsbild ligger här:
 
@@ -209,5 +209,5 @@ Använd inte obehörig scraping av LinkedIn, Instagram eller X/Twitter. Det kan 
 - Byt exempelposter mot kuraterade riktiga inlägg.
 - Byt placeholderbilder mot godkända kampanjbilder.
 - Byt deltagar-exempelbilderna i `public/images/participation-*.jpg` mot riktiga bilder: selfie, kvinna i produktion och händer som kodar på dator.
-- Uppdatera `public/images/og-placeholder.jpg` inför skarp delning.
+- Kontrollera `public/images/og-image.jpg` i LinkedIn Post Inspector inför bred delning.
 - Kör `npm run build` innan deploy.

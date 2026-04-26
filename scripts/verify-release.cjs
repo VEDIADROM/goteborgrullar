@@ -43,6 +43,8 @@ check('footer mentions both Volvo entities', content.includes('Volvo Cars') && c
 check('participation images have descriptive alt text', read('src/components/HowToParticipate.jsx').includes('Bildidé:'))
 check('feed images have descriptive alt text', read('src/components/LiveFeed.jsx').includes('Bild från') && read('src/components/LiveFeed.jsx').includes('Profilbild för'))
 check('asset helper is used for runtime images', read('src/components/LiveFeed.jsx').includes('assetUrl(') && read('src/components/ContextBanner.jsx').includes('assetUrl('))
+check('feed curation flow is visible', content.includes('Flödet är handkuraterat') && content.includes('Tipsa om ett inlägg'))
+check('official hashtag links exist', content.includes('linkedin.com/feed/hashtag') && content.includes('instagram.com/explore/tags'))
 check('posts.json is an array', Array.isArray(posts), `type=${typeof posts}`)
 check('posts.json contains sample posts', posts.length >= 4, `count=${posts.length}`)
 

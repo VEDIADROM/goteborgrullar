@@ -22,6 +22,28 @@ export default function LiveFeed() {
             {feed.title}
           </h2>
           <p className="mt-4 text-lg text-muted">{feed.sub}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">
+            {feed.curationNote}
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href={feed.submitUrl}
+              className="inline-flex items-center rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-cream transition hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-cream"
+            >
+              {feed.submitLabel}
+            </a>
+            {feed.hashtagLinks.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-line bg-white px-5 py-2.5 text-sm font-medium text-ink transition hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-cream"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
 
         {posts.length === 0 && (

@@ -94,6 +94,20 @@ export const content = {
   feed: {
     title: 'Så rullar vi just nu',
     sub: 'Ett urval av poster med #Göteborgrullar. Hand-kuraterade.',
+    curationNote: 'Flödet är handkuraterat för att respektera plattformarnas villkor och säkerställa samtycke.',
+    submitLabel: 'Tipsa om ett inlägg',
+    submitUrl:
+      'mailto:viktor.eliasson@diadrom.se?subject=Tipsa%20om%20inlagg%20till%20%23Goteborgrullar&body=Lank%20till%20inlagg%3A%0APlattform%3A%0ANamn%3A%0ARoll%20eller%20sammanhang%3A%0AKort%20textutdrag%3A%0AOK%20att%20visa%20bild%20och%20profilbild%20pa%20sidan%3A%20ja%2Fnej',
+    hashtagLinks: [
+      {
+        label: 'Se hashtaggen på LinkedIn',
+        url: 'https://www.linkedin.com/feed/hashtag/g%C3%B6teborgrullar/',
+      },
+      {
+        label: 'Se hashtaggen på Instagram',
+        url: 'https://www.instagram.com/explore/tags/g%C3%B6teborgrullar/',
+      },
+    ],
   },
 
   examples: {

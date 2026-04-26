@@ -109,6 +109,28 @@ Fält:
 
 Om `data/posts.json` är en tom lista (`[]`) visas ett tomt feed-läge med uppmaning att posta med `#Göteborgrullar`.
 
+## Kuratera flödet
+
+Första versionen använder en enkel inbox-modell:
+
+1. Besökare postar på LinkedIn eller Instagram med `#Göteborgrullar`.
+2. Besökare kan klicka på `Tipsa om ett inlägg` i Live Feed-sektionen.
+3. Knappen öppnar ett förifyllt mejl till `viktor.eliasson@diadrom.se`.
+4. Admin kontrollerar länken, texten och att bild/profilbild får visas.
+5. Godkända poster läggs in manuellt i `data/posts.json`.
+6. Commit och push till `main` bygger och deployar sidan automatiskt.
+
+Det här är medvetet manuellt. Det ger moderation, samtycke och låg plattformsrisk utan scraping eller API-beroenden.
+
+Sidan länkar även till hashtaggarna direkt:
+
+```text
+https://www.linkedin.com/feed/hashtag/g%C3%B6teborgrullar/
+https://www.instagram.com/explore/tags/g%C3%B6teborgrullar/
+```
+
+Om kampanjen växer kan `submitUrl` i `src/content.js` bytas från mailto till Google Forms, Airtable eller annan enkel admin-inbox.
+
 ## Lägg till bilder
 
 Lägg feed-bilder i:

@@ -154,6 +154,22 @@ public/images/final-cta-background.jpg
 
 Den är hämtad från Unsplash: "a group of people walking through a city" i Haga, Göteborg av Hans Ott. Bilden är fri att använda under Unsplash License. Attribution krävs inte, men källan är dokumenterad här för spårbarhet.
 
+Bildidéerna i deltagarsektionen ligger här:
+
+```text
+public/images/participation-selfie.jpg
+public/images/participation-production.jpg
+public/images/participation-coding.jpg
+```
+
+De är fria placeholderbilder från Unsplash:
+
+- Selfie: "a person taking a selfie" av Alexander Krivitskiy.
+- Produktion: "a person working in a factory" i Falun, Sweden av Jimmy Nilsson Masth.
+- Kodning: "a woman's hands on a laptop keyboard" av Sven Mieke.
+
+Byt gärna dessa mot riktiga kampanjbilder inför skarp produktion.
+
 ## Deploy till Vercel
 
 1. Pusha repot till GitHub.

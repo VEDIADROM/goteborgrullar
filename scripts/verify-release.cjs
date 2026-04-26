@@ -30,6 +30,7 @@ check('Twitter title uses #Göteborgrullar', html.includes('twitter:title') && h
 check('favicon no longer uses old JR initials', !favicon.includes('JR') && favicon.includes('#G'))
 check('content site name uses #Göteborgrullar', content.includes("siteName: '#Göteborgrullar'"))
 check('banner explains initiative early', content.includes("'#Göteborgrullar är ett oberoende, organiskt initiativ från Göteborg."))
+check('banner eyebrow includes #Göteborgrullar', content.includes("eyebrow: 'Bakgrunden · #Göteborgrullar'"))
 check('hero note uses #Göteborgrullar as site name', content.includes("Initiativet heter #Göteborgrullar."))
 check('footer disclaimer uses #Göteborgrullar', content.includes("'#Göteborgrullar är ett oberoende initiativ."))
 check('README uses #Göteborgrullar heading', readme.startsWith('# #Göteborgrullar'))

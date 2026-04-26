@@ -166,7 +166,7 @@ Toppbannerns bakgrundsbild ligger här:
 public/images/context-background.jpg
 ```
 
-Den är hämtad från Pexels som en fri bild från Göteborg: "Industrial Architecture at Twilight in Gothenburg" av Pasi Mämmelä. Attribution krävs inte enligt Pexels licens, men källan är dokumenterad här för spårbarhet.
+Den är hämtad från Unsplash: "a group of people walking through a city" i Haga, Göteborg av Hans Ott. Bilden är fri att använda under Unsplash License. Attribution krävs inte, men källan är dokumenterad här för spårbarhet.
 
 Slut-CTA:ns bakgrundsbild ligger här:
 

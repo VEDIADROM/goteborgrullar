@@ -15,7 +15,7 @@ export const content = {
   },
 
   contextBanner: {
-    eyebrow: 'Bakgrunden',
+    eyebrow: 'Bakgrunden · #Göteborgrullar',
     title: 'Rubrikerna är tunga. Människorna bakom dem rullar vidare.',
     body: '#Göteborgrullar är ett oberoende, organiskt initiativ från Göteborg. Det startar i ett läge där många pratar om nedgång, priskrig och osäkerhet, och väljer att också visa arbetet, ansvarskänslan och vardagen bakom rubrikerna.',
     headlinesLabel: 'Exempel på rubriker som präglat våren 2026',

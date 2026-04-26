@@ -4,6 +4,7 @@ dist
 .env
 .env.local
 .vite
+.tools
 *.log
 playwright-*.png
 .claude

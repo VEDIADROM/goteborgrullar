@@ -44,6 +44,13 @@ Kör release-kontroller:
 npm run verify:release
 ```
 
+Kontrollera att byggda bild- och asset-sökvägar fungerar på GitHub Pages:
+
+```bash
+npm run build
+npm run verify:pages-assets
+```
+
 Förhandsgranska byggd version:
 
 ```bash
@@ -165,7 +172,8 @@ Den är hämtad från Unsplash: "a group of people walking through a city" i Hag
 ## Inför GitHub
 
 - Commita inte `node_modules/`, `dist/`, `.env*` eller lokala Playwright-screenshots.
-- Kör `npm run verify:release` och `npm run build` innan du pushar större ändringar.
+- Kör `npm run verify:release`, `npm run build` och `npm run verify:pages-assets` innan du pushar större ändringar.
+- GitHub Actions kör release-kontroller, build och Pages asset-kontroller på varje push. Deploy sker bara från `main`.
 - `data/posts.json` importeras vid build. När du lägger till eller ändrar poster behöver sidan byggas och deployas igen.
 - Byt demo-länkar i `data/posts.json` mot riktiga inläggslänkar innan lansering.
 - Kontrollera samtycke för riktiga bilder och profilbilder innan de publiceras.

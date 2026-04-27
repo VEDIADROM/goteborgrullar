@@ -9,7 +9,7 @@ export const content = {
   hero: {
     eyebrow: 'Ett oberoende initiativ från Göteborg',
     headline: 'En stad som rullar tillsammans',
-    sub: 'Ett enkelt initiativ för att visa människorna som får saker att fungera i och runt Volvo.',
+    sub: 'Ett enkelt initiativ för att visa människorna som får saker att fungera i Volvo-bolagen och hos deras leverantörer.',
     cta: 'Så deltar du',
     hashtagNote: 'Initiativet heter #Göteborgrullar.',
   },
